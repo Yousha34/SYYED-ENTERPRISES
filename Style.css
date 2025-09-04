@@ -1,0 +1,361 @@
+.navbar-brand {
+  color: #f8f9fa !important;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.contact-form {
+  max-width: 600px;
+}
+
+footer {
+  font-size: 0.9rem;
+}
+
+.contact-info h4 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.map-container iframe {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.contact-subsection {
+  color: #6c757d;
+}
+
+@media (max-width: 767px) {
+  .contact-subsection {
+    margin-top: 30px;
+  }
+}
+
+.navbar-brand img {
+  height: 40px;
+  width: auto;
+  margin-right: 8px;
+}
+
+
+
+.hero-section {
+  background: url("Images/mainPic.jpg") no-repeat center center/cover;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-section h1,
+.hero-section p {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  color: #f8f9fa;
+  opacity: 0.9;
+}
+
+
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+  text-align: left;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+
+.about-section {
+  padding: 60px 0;
+}
+
+.section-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.about-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.about-img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.objectives-section {
+  background-color: rgb(236, 235, 235);
+}
+
+
+
+.service-card {
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.service-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.service-card .card-body {
+  background-color: rgb(236, 235, 235);
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-card .btn {
+  border-radius: 30px;
+  padding: 8px 20px;
+}
+
+
+
+.solar-services-bg {
+  background-color: rgb(236, 235, 235); 
+}
+
+.gray-bg {
+  background-color: rgb(236, 235, 235);
+}
+
+
+
+.client-card {
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.client-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.25);
+}
+
+.client-card img {
+  max-height: 80px;
+  object-fit: contain;
+}
+
+
+/* 
+.navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    transition: all 0.3s ease;
+}
+ */
+
+
+.navbar .dropdown-menu-dark {
+    background-color: #343a40;
+    border: none;
+}
+
+.navbar .dropdown-menu-dark .dropdown-item {
+    color: #fff;
+}
+
+.navbar .dropdown-menu-dark .dropdown-item:hover {
+    background-color: #495057;
+}
+
+
+
+.navbar-nav .nav-link {
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffc107;
+}
+
+.nav-item.dropdown .dropdown-menu {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-item {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #ffc107;
+    color: #000;
+}
+
+
+
+.navbar-nav .nav-link {
+    position: relative;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffc107;
+    transition: width 0.4s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffc107;
+}
+
+.nav-item .dropdown .dropdown-menu {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px) rotateX(-10deg);
+    transition: opacity 0.35s ease, transform 0.35s ease;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    border-radius: 0.5rem;
+    background-color: #343a40;
+}
+
+.nav-item .dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) rotateX(0deg);
+}
+
+.dropdown-item {
+    transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background: linear-gradient(90deg, #ffc107, #ffeb3b);
+    color: #000;
+    transform: scale(1.05);
+    border-radius: 0.3rem;
+}
+
+
+
+.hover-img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+}
+
+.hover-img:hover {
+    transform: translateY(-5px) rotateX(2deg) rotateY(2deg) scale(1.03);
+    box-shadow: 6px 6px 20px rgba(0,0,0,0.3);
+}
+
+
+
+.tire-img {
+  width: auto;
+  max-width: 100%;
+  height: 200px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+}
+
+
+
+.row.g-4 {
+  align-items: stretch;
+}
+
+
+
+.contact-item {
+  font-size: 1rem;
+  color: #333;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.contact-item i {
+  color: rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-item:hover {
+  color: #0d6efd;
+  transform: translateX(5px);
+}
+
+.contact-item:hover i {
+  color: blue;
+}
+
+
+.dropdown-menu .sub-service {
+  padding-left: 2rem;
+}
